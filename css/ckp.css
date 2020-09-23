@@ -4,7 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #36d6b6;
-    min-height: 100vh;
 }
 
 header {
@@ -18,8 +17,9 @@ header {
 }
 
 main {
+    margin-top: 3px;
     background-color: #dfeff0;
-    top: 8vh;
+    top: 6vh;
     min-height: 87vh;
     width: 100vw;
 }
@@ -29,4 +29,25 @@ footer {
     background-color: #054f7a;
     height: 3vh;
     width: 100vw;
+}
+
+#photowall {
+    background-color: #dfeff0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 50vh;
+}
+
+#photowall > img {
+    padding-right: 3px;
+    padding-bottom: 3px;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+#logo {
+    display: inline-block;
 }
